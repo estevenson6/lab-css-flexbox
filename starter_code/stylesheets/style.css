@@ -53,8 +53,16 @@ header {
     background-color: #540B51;
     margin-block-start: 0;
 }
+header>div>div {
+    display: flex;
+    justify-content: center;
+}
 .header-img {
-    width: 80vw
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+;
 }
 header>div>h1 {
     color:white;
@@ -110,17 +118,29 @@ header>div>p {
     display: flex;
     align-items: center;
     justify-content: baseline;
-
 }
-
+main {
+    background-color: #f3eae2;
+}
+#quote {
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+}
 .company-logos{
-    object-fit: contain;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    flex-basis: fit-content;
+    justify-content: center;
+    }
+.company-logos>.logo-images{
+    flex-basis: 15vh;
 }
-
+.logo-images {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
 
 /* @media (maximum-width: 768px) ()
 
